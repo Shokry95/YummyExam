@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy Exam</title>
+</head>
+
+<body>
+
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center"
+        style="display: none;">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0" style="left: -260.227px;">
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li id="search" class="py-2 position-relative cursor-pointer"
+                        style="top: 300px;">Search</li>
+                    <li id="getCategories" class="py-2 position-relative cursor-pointer"
+                        style="top: 300px;">Categories</li>
+                    <li id="getArea" class="py-2 position-relative cursor-pointer"
+                        style="top: 300px;">Area</li>
+                    <li id="getIngredients" class="py-2 position-relative cursor-pointer"
+                        style="top: 300px;">Ingredients</li>
+                    <li id="showContacts" class="py-2 position-relative cursor-pointer"
+                        style="top: 300px;">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="images/logo.png" alt="" srcset="">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container w-75" id="searchContainer">
+    </div>
+
+    <div class="min-vh-100 position-relative">
+        <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center"
+            style="display: none;">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+
+
+        <div class="container position-relative">
+            <div class="row py-5 g-4" id="dataContainer"></div>
+            <div class="row py-5 g-4" id="detailsContainer" style="display: none;"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+
+</html>
